@@ -48,7 +48,7 @@ The marketing team at Sprocket Central Pty Ltd is sure that, if correctly analys
 #### Most Profitable Brand
 When conducting analysis it is important to factor in what was the most sold good in the company. The graph shows which is the most profitable brand sold in the company. From there we can calculate which product the company ought to focus on more. The data indicates that Trek Bicycles is the profitable good as compared to other products in the company.
 
-<img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/Profitable.PNG" alt="Image description" width="400" height="400">
+<img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/Profitable%20Brand.png" alt="Image description" width="400" height="400">
 
 
 #### Bike Related Purchase according to Gender
