@@ -35,23 +35,35 @@ The client provided with 3 datasets:
 | Transactions | Profit is missing | Various columns have nulls that is insightful in analysis |          | No duplicates | Cancellation status need to be updated   | List price format should be corrected  |
 |Impact |Regulatory implications like fines. Reputational damage from litigation|  | Missed opportunity in accurate segments| Skewed data leading to inaccurate analysis| Memory cost implications
 
-**Accuracy issues**
--	DOB was inaccurate for the “Customer Demographic” and missing an age column.
--	“Transaction” the profit realized in the year is missing. It important to indicate profit enabling the analyst accessing how they company is performing
-**Mitigation:**
--	Adjust the DOB for the specific customer. The error indicated he is the only customer born in 1814 as opposed to the next born in 1930
--	Add an age column to see the age distribution of the customers
-**Completeness**
--	There is vital data that will give more description of the customer such as the job title and job industry category in “Customer Demographic”.
--	The number of customer id is incomplete
--	Columns such as product class, brand, standard cost, product line and product date sold is vital information that assist the tracking changes in cost and revenue details for forecasting
-**Consistency** 
--	In the sheets “Customer Demographic” and “New customer” have some inconsistency in the column named gender. Clarification is vital. 
-**Uniqueness**
--	There are no duplicates across all datasests provided.
-**Relevancy** 
--	In the sheet “Customer Demographic” there is a column named default that has no relevancy to the data.
--	In the “Transaction” sheet cancelled ordered should be filtered. The cancelled orders are 589, this causes skewness in the data when not properly dealt with.
+**Accuracy issues:**
+
+The DOB data in the "Customer Demographic" sheet is inaccurate for some customers, and an age column is missing, which makes it difficult to analyze customer demographics accurately. To mitigate this, the company should adjust the DOB data for each customer to ensure accuracy, and add an age column to the sheet to have a clear view of the age distribution of customers. This information will be valuable in understanding customer behavior and preferences, and in developing targeted marketing strategies.
+
+The "Transaction" sheet is missing the profit realized in the year, which is crucial information for analyzing revenue and forecasting sales trends. The company should ensure that all necessary financial data is included in the transaction sheet for accurate analysis.
+
+**Completeness:**
+
+Some essential data, such as job title and job industry category in the "Customer Demographic" sheet, is missing, which makes it difficult to understand the customer's professional background. The company should ensure that all relevant customer data is captured in the sheet to enable better analysis of customer demographics and behavior.
+
+The number of customer IDs is incomplete, which may make it difficult to identify customers and analyze their behavior. The company should ensure that all customer IDs are captured accurately to enable comprehensive analysis of customer behavior.
+
+Columns such as product class, brand, standard cost, product line, and product date sold are vital information that assists in tracking changes in cost and revenue details for forecasting. The company should ensure that these columns are complete and accurate to enable better analysis and forecasting of product sales and revenue.
+
+**Consistency:**
+
+The gender column in the "Customer Demographic" and "New Customer" sheets have inconsistencies that need clarification. The company should ensure that gender data is captured accurately and consistently to enable comprehensive analysis of customer demographics and behavior.
+
+**Uniqueness:**
+
+The data set has no duplicates, which is good news for the company. The company should ensure that all future data is checked for duplicates to maintain data quality.
+
+**Relevancy:**
+
+The "default" column in the "Customer Demographic" sheet has no relevancy to the data. The company should remove this column to maintain data cleanliness and consistency.
+
+The "Transaction" sheet includes canceled orders, which may skew the analysis of customer behavior and revenue. The company should filter out canceled orders to enable accurate analysis of sales and revenue trends.
+
+**Overall, the company should prioritize data quality to ensure that accurate, complete, consistent, and relevant data is used for analysis and decision-making. The company should also consider investing in data management tools and software to improve data accuracy and completeness, reduce inconsistencies, and ensure better data quality control.**
 
 ### TASK TWO 
 
@@ -111,7 +123,7 @@ Platinum customers bring more value and visit the company frequently whilst Bron
 #### Profitable brand according to RFM score
 We observe that there isn't much change in the most profitable good from the previous analysis. It is worth noting that in each brand category they are more Platinum and Gold members buying more of the products which indicates that the company should look for a strategy to invest more on how they can retain the platinum members pushing sales higher.
 
-<img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/Profitable%20brand%20per%20RFM.png" alt="Image description" width="500" height="400">
+<img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/Profitable%20brand%20per%20RFM.png" alt="Image description" width="600" height="400">
 
 #### Segmentation of gender according to title
 Platinum member being they are the most we observe that females are more dominant in each customer title category.
