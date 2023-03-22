@@ -25,7 +25,7 @@ The client provided with 3 datasets:
 >- Relevancy 
 >- Consistency 
 
-**Summary table of the data quality framework**
+**Summary of Data Quality Checks on Client Datasets.**
 
 
 | Data set | Accuracy | Completeness | Consistency | Uniqueness | Relevancy | Validity |
@@ -46,17 +46,17 @@ The marketing team at Sprocket Central Pty Ltd is sure that, if correctly analys
 ### Data Exploration
 
 #### Most Profitable Brand
-When conducting analysis it is important to factor in what was the most sold good in the company. The graph shows which is the most profitable brand sold in the company. From there we can calculate which product the company ought to focus on more. The data indicates that Trek Bicycles is the profitable good as compared to other products in the company.
+When conducting analysis it is important to factor in what was the most sold good in the company. The graph shows which is the most profitable brand sold in the company. From there we can calculate which product the company ought to focus on more. The data indicates that WeareA2B is the profitable good as compared to other products in the company. In this research study we should explore why is that the case that many customers in the company prefer that product over others.
 
 <img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/Profitable%20Brand.png" alt="Image description" width="400" height="400">
 
 
 #### Bike Related Purchase according to Gender
-Males are predominantly purchasing bike related products in the company as opposed to other genders. Nonetheless, it is worth noting that females are not far as well having a slighlty less purchases than males. This indicates to the marketing team they can focus on gender neutral products and it would not have a big impact in their sales saving cost on certain production measures. 
+Males are predominantly purchasing bike related products in the company as opposed to other genders. Nonetheless, it is worth noting that females are not far as well having a slighlty less purchases than males. This indicates to the marketing team they can focus on gender neutral products and it would not have a big impact in their sales saving cost on certain production measures. The Marketing team finds itself in a good position where they won't have to over spend in their marketing strategies in regards to gender. 
 
 <img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/Bike%20related%20purchase%20by%20gender.png" alt="Image description" width="400" height="400">
 
-### Data Development
+### Model Development
 
 >The “RFM” in RFM analysis stands for recency, frequency and monetary value. RFM analysis is a way to use data based on existing customer behavior to predict how a new customer is likely to act in the future. An RFM model is built using three key factors:
 >1. How recently a customer has transacted with a brand
@@ -65,9 +65,16 @@ Males are predominantly purchasing bike related products in the company as oppos
 
 >Rather than analyzing the entire customer database, it’s better to segment customers by characteristics like age or geography and separate them into a customer group. By engaging them in a well-segmented marketing campaign, you are able to create a relevant, personalized offer for a high-value customer.
 
-We observe from the new customer list we have a large majority of the customers being platinum members followed by Bronze , Gold and Silver respectively 
+It is important to understand the rankings of the customer title shown below: 
+1. Platinum - They are customers are very loyal, have a high purchasing power and make frequent transactions with the company.
+2. Gold - They are also Customers with a high purchasing power but they dont make as frequent transactions as Platinum members
+3. Silver - They are customers not as profitable as Gold and Platinum but they make frequent transactions more than Bronze
+4. Bronze - They are least profitable and highly demanding in nature. 
 
-<img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/RFM_score.png" alt="Image description" width="400" height="400">
+We observe from the new customer list we have a large majority of the customers being platinum members followed by Bronze , Gold and Silver respectively
+The company they should look into why they have more bronze customers as opposed to the Gold customers. How can they turn them into Silver Customers? Areas they can look into is services offered to those customers, incentives like promotions/discounts can appeal to them and store credit 
+
+<img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/RFM_score.png" alt="Image description" width="600" height="400">
 
 #### Scatter plot of recency and monetary value
 
@@ -79,7 +86,7 @@ Those who visited more than 200 days ago generate low revenue
 
 #### Scatter plot of monetary value and frequency
 Customers classified as “Platinum”, “Gold”, “Bronze” and “Silver” are represented in the scatter plot. 
-Platinum customers bring more value and visit the company frequently whilst Silver customers visit the company lest frequently hence bringing lower monetary value
+Platinum customers bring more value and visit the company frequently whilst Bronze customers visit the company least frequently hence bringing lower monetary value
 
 <img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/Scatter%20MonetaryValue%20vs%20Frequency.png" alt="Image description" width="500" height="400">
 
