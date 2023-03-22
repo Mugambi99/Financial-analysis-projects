@@ -35,6 +35,24 @@ The client provided with 3 datasets:
 | Transactions | Profit is missing | Various columns have nulls that is insightful in analysis |          | No duplicates | Cancellation status need to be updated   | List price format should be corrected  |
 |Impact |Regulatory implications like fines. Reputational damage from litigation|  | Missed opportunity in accurate segments| Skewed data leading to inaccurate analysis| Memory cost implications
 
+**Accuracy issues**
+-	DOB was inaccurate for the “Customer Demographic” and missing an age column.
+-	“Transaction” the profit realized in the year is missing. It important to indicate profit enabling the analyst accessing how they company is performing
+**Mitigation:**
+-	Adjust the DOB for the specific customer. The error indicated he is the only customer born in 1814 as opposed to the next born in 1930
+-	Add an age column to see the age distribution of the customers
+**Completeness**
+-	There is vital data that will give more description of the customer such as the job title and job industry category in “Customer Demographic”.
+-	The number of customer id is incomplete
+-	Columns such as product class, brand, standard cost, product line and product date sold is vital information that assist the tracking changes in cost and revenue details for forecasting
+**Consistency** 
+-	In the sheets “Customer Demographic” and “New customer” have some inconsistency in the column named gender. Clarification is vital. 
+**Uniqueness**
+-	There are no duplicates across all datasests provided.
+**Relevancy** 
+-	In the sheet “Customer Demographic” there is a column named default that has no relevancy to the data.
+-	In the “Transaction” sheet cancelled ordered should be filtered. The cancelled orders are 589, this causes skewness in the data when not properly dealt with.
+
 ### TASK TWO 
 
 >Sprocket Central Pty Ltd has given us a new list of 1000 potential customers with their demographics and attributes. However, these customers have prior transaction history with the organisation. 
@@ -90,9 +108,8 @@ Platinum customers bring more value and visit the company frequently whilst Bron
 
 <img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/Scatter%20MonetaryValue%20vs%20Frequency.png" alt="Image description" width="500" height="400">
 
-#### Profitable brand according to rfm score
-From the previous analysis we observed that the most profitable brand was Trek Bicycles. From new developments using the RFM values we observe that WeareA2B is the most profitable good. 
-Platinum and Gold are buying more of the brand which indicates that the company should look for a strategy to invest more on that brand to attract the new customers 
+#### Profitable brand according to RFM score
+We observe that there isn't much change in the most profitable good from the previous analysis. It is worth noting that in each brand category they are more Platinum and Gold members buying more of the products which indicates that the company should look for a strategy to invest more on how they can retain the platinum members pushing sales higher.
 
 <img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/Profitable%20brand%20per%20RFM.png" alt="Image description" width="500" height="400">
 
@@ -103,13 +120,24 @@ The company should interpret this as an opportunity to learn their clientele's n
 <img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/Gender%20vs%20Customer%20Title.png" alt="Image description" width="500" height="400">
 
 #### Segmentation of wealth segment according to title
+In the wealth segment, the categorization of customers into Mass, Affluent, and High Net Worth segments is based on their level of wealth and investable assets. The Mass segment typically comprises customers with lower levels of wealth, while the Affluent and High Net Worth segments consist of customers with higher levels of wealth and investable assets.
 A large proportion of wealth segement lies in the mass customer as they comprise with more platinum member as compared to the other segments. 
-It is worth noting that High Net worth customers on the platinum side is higher than an affluent customer meaning the company can strategize how they can increase sales by having more gold member become platinum
+It is worth noting that High Net worth customers on the platinum side is higher than an affluent customer meaning the company can strategize how they can increase sales by having more gold member become platinum. Focus on Retaining Platinum Members: Regardless of the segment, the Platinum members are the most valuable customers, and the company should focus on retaining them by providing personalized services, exclusive perks, and rewards. They can also offer incentives for referring other customers within their segment.
 
 <img src="https://github.com/Mugambi99/Financial-analysis-projects/blob/main/RFM%20Model/Plots/wealth%20segment.PNG" alt="Image description" width="500" height="400">
 
 ### Recommendation 
 
+>Focus on Retaining Platinum Members: Since Platinum members are the most valuable customers, the company should focus on retaining them by providing personalized services, exclusive perks, and rewards. They can also offer incentives for referring other customers.
 
+>Improve Services for Bronze Members: Bronze members are the least valuable customers in terms of their monetary value, but they still represent a significant portion of the customer base. The company can improve services for Bronze members to encourage them to upgrade to higher tiers.
+
+>Upsell to Gold and Silver Members: Gold and Silver members have a higher monetary value than Bronze members, and they are likely to be more receptive to upselling and cross-selling efforts. The company can offer them upgrades, add-ons, or bundles to increase their lifetime value.
+
+>Customize Marketing and Promotions: The company can customize its marketing and promotional efforts based on the different segments. For example, Platinum members may respond better to exclusive promotions and events, while Bronze members may be more interested in discounts and freebies.
+
+>Collect and Analyze Customer Feedback: The company can collect feedback from all segments to identify areas for improvement and to tailor its services to meet the needs of different customers. This can help the company improve customer satisfaction and increase loyalty across all segments.
+
+Overall, the company should aim to provide a personalized experience to all customers and focus on building long-term relationships. By understanding the different segments and their unique needs, the company can develop effective strategies to increase customer retention, loyalty, and revenue.
 
 
